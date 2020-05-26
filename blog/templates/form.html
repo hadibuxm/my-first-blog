@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUEST ONLINE EXAM FORM</title>
+</head>
+<body>
+    <h1>WELCOME TO QUEST ONLINE EXAM FORM </h1>
+    <!--FORM-->
+    <form action="/add/" method="POST">{% csrf_token %}
+        <label for="name">First Name</label>
+        <input style="color: rgb(195, 0, 255);" type="text"name="name"/>
+        <label for="secondname">Second Name</label>
+        <input style="color: rgb(195, 0, 255);" type="text"name="secondname" />
+        <label for="Father">Father Name</label>
+        <input style="color: rgb(195, 0, 255);" type="text"name="fathername"/>
+        <br><br>
+        <label for="roll">Roll No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);" type="text"name="rollno" />
+        <label for="mobile">Mobile No.</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);" type="tel"name="mobile"/>
+        <label for="sex">Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);" type="text"name="gender"/>
+        <br><br>
+        <label for="emailid">Email id</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);" type="email"name="emailid"/>
+        <label for="campus">Campus</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"   type="text" name="campus" >
+        <label for="annual/supply">Annual/Supply</label>
+        <input style="color: rgb(195, 0, 255);"  type="text" name="annualsupply">
+        <br><br>
+        <label for="challan">Challan No.</label>
+        <input style="color: rgb(195, 0, 255);"  type="number"name="challanno">
+        <label for="department">Department</label>&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"  type="text" name="department">
+        <label for="sub1">Subject1</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"  type="text" name="subject1">
+        <br><br>
+        <label for="sub2">Subject2</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"  type="text" name="subject2">
+        <label for="sub3">Subject3</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"  type="text" name="subject3">
+        <label for="sub4">Subject4</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"  type="text" name="subject4"><br><br>
+        <label for="sub5">Subject5</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input style="color: rgb(195, 0, 255);"  type="text" name="subject5">
+        <br><br>
+        <input style="margin-left: 550px;"  type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

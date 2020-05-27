@@ -24,3 +24,5 @@ class Exam_form(models.Model):
     sub3=models.CharField(max_length=20)
     sub4=models.CharField(max_length=20)
     sub5=models.CharField(max_length=20)
+    def __str__(self):
+        return self.roll_no

@@ -12,7 +12,7 @@ class Exam_form(models.Model):
     second_name=models.CharField(max_length=20)
     father_name=models.CharField(max_length=20)
     roll_no=models.CharField(max_length=7)
-    mobile_no=models.IntegerField(default=00000000000)
+    mobile_no=models.CharField(max_length=11)
     sex=models.CharField(max_length=5)
     email_id=models.TextField(max_length=50)
     campus=models.TextField(max_length=100)
